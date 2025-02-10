@@ -9,9 +9,7 @@ class DataBaseHelper:
         self,
         url: str,
         echo: bool = False,
-        echo_pool: bool = False,
-        max_overflow: int = 10,
-        pool_size: int = 15,
+
     ):
         self.engine: AsyncEngine = create_async_engine(
             url=url,
