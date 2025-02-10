@@ -13,9 +13,8 @@ class RunConfig(BaseModel):
 
 
 class Settings(BaseSettings):
-    __model_config__ = SettingsConfigDict(
+    model_config = SettingsConfigDict(
         case_sensitive=False,
-        env_prefix="",
         env_nested_delimiter="__",
         env_file=(".env.template", ".env"),
     )
